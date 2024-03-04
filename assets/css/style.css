@@ -192,3 +192,65 @@ a .title {
     height: 100%;
     object-fit: cover;
 }
+
+/****************************** Cards ******************************/
+.cardBox{
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.cardBox .card{
+    position: relative;
+    background: var(--white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 90px;
+    width: 220px;
+    border-radius: 15px;
+    box-shadow: 0 7px 25px rgb(0, 0, 0, 0.08);
+    cursor: pointer;
+}
+
+.cardBox .card.active{
+    width: 280px;
+}
+
+.cardBox .card .numbers{
+    position: relative;
+    font-weight: 600;
+    font-size: 2rem;
+    color: var(--blue);
+}
+
+.cardBox .card .cardName{
+    color: var(--black2);
+}
+
+.cardBox .card .iconBx{
+    position: relative;
+    width: 60px;
+    height: 40px;
+}
+
+.iconBx .bx{
+    position: absolute;
+    top: -5px;
+    right: 0;
+    font-size: 2.5rem;
+    color: var(--black2);
+}
+
+.cardBox .card:hover{
+    background: var(--blue);
+}
+
+.cardBox .card:hover .numbers,
+.cardBox .card:hover .cardName,
+.cardBox .card:hover .bx{
+    color: var(--white);
+}

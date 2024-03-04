@@ -17,8 +17,12 @@ list.forEach(item => item.addEventListener('mouseover', activeLink));
 const toggle = document.querySelector('.toggle');
 const navigation = document.querySelector('.navigation');
 const main = document.querySelector('.main');
+const card = document.querySelectorAll('.cardBox .card')
 
 toggle.addEventListener('click', () => {
     navigation.classList.toggle('active');
     main.classList.toggle('active');
+    card.forEach(item => {
+        item.classList.toggle('active');
+    });
 });
