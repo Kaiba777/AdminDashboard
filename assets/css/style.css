@@ -233,7 +233,7 @@ a .title {
 
 .iconBx .bx{
     position: absolute;
-    top: -5px;
+    top: 0;
     right: 0;
     font-size: 2.5rem;
     color: var(--black2);
